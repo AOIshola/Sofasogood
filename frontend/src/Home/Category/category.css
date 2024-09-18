@@ -1,0 +1,132 @@
+
+.category .blogCardDisplay{
+    display: none;
+}
+
+
+.categoryContain{
+    width: 100vw;
+    margin: 0 auto;
+    background-color:rgba(17, 75, 61, 1);
+    /* display: flex; */
+    /* position: relative; */
+}
+
+.categoryHeading {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryTexts{
+    width: 100%;
+    display: inline-flex;
+    padding: 4rem 4rem 1rem 4rem;
+    justify-content: space-between;
+}
+
+
+
+
+.categoryTexts h1{
+    color: rgba(217, 249, 217, 1);
+    /* width: 725px; */
+    font-size: 4rem;
+    text-align: left;
+}
+.categoryTexts div{
+    position: relative;
+    margin-top: 0.5rem;
+    /* background-color: red; */
+   
+}
+
+.categoryTexts p{
+    color:rgba(255, 255, 255, 1);
+    /* border: 1px solid red; */
+}
+
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.categoryContain a{
+    color: rgba(101, 220, 192, 1);
+    
+}
+.cardObjects{
+    display: flex;
+    padding: 1rem 4rem 1rem 4rem;
+    justify-content: space-around;
+    
+}
+.category{
+    justify-content: space-evenly;
+}
+
+.category .cards-img{
+    width: 18rem;
+    height: 15rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.category .cardsTexts{
+    width: 18rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1044px){
+    .categoryTexts{
+        padding: 2rem 1rem;
+    }
+
+    .categoryTexts h1{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .category .cards-img{
+        width: 12rem;
+        height: 12rem;
+        /* border-radius: 10px;
+        margin-bottom: 2rem; */
+    }
+
+    .category .cardsTexts{
+        width: 12rem;
+        font-size: 15px;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    
+}
+
+
+@media screen and (max-width: 769px){
+    .categoryTexts{
+        width: 100%;
+        display: block;
+        padding: 2rem 2rem 1rem 2rem;
+        /* justify-content:space-between; */
+    }
+    .cardObjects{
+        display: flex;
+        padding: 1rem 2rem 1rem 2rem;
+        overflow: scroll;
+        
+    }
+    .category .cards-img{
+        width: 18rem;
+        height: 13rem;
+        margin-right: 3rem;
+        
+    }
+
+    .category .cardsTexts{
+        width: 18rem;
+    }
+
+}

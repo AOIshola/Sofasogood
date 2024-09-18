@@ -1,0 +1,88 @@
+
+
+.footercontain{
+    display: flex;
+    padding: 4rem;
+    background: rgba(250, 243, 235, 1);
+    justify-content: space-between;
+}
+
+
+
+.footerlogo{
+    width: 10rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.footerInner1 h5{
+    color: rgba(22, 90, 74, 1);
+}
+
+.footerInner1 input{
+    background: transparent;
+    border: 1px solid rgba(22, 90, 74, 1);
+    padding: 3px;
+    width: 80%;
+}
+
+.footerInnerMobile {
+    display: none;
+}
+
+.footerInner2 h2{
+    color: rgba(245, 130, 72, 1);
+}
+
+.footerInner2 table td, th{
+    padding-right: 3rem;
+}
+
+.footerInner2 table th{
+    color: rgba(22, 90, 74, 1);
+    
+  }
+
+.footerInner2 table a{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1044px){
+
+    .footercontain{
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    .footerInner2 table td, th{
+        padding-right: 1rem;
+    }
+
+    .footerInner1{
+        margin-right: 2rem;
+    }
+
+    .footerInner1 p{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .footerInner1{
+        display: none;
+    }
+    .footerBig{
+        display: none;
+    }
+    .footerInnerMobile{
+        display: block;
+    }
+    .footerInnerMobile h5{
+        color:rgba(22, 90, 74, 1);
+        margin-top: 2rem;
+    }
+    .footerInnerMobile img{
+        margin-top: 3rem;
+    }
+
+}

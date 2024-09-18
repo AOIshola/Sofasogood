@@ -1,0 +1,248 @@
+ .testimonial .blogCardDisplay{
+    display: none;
+}
+ .feature .blogCardDisplay, .productCardDisplay{
+    display: none;
+}
+
+.featureHeading{
+    text-align: center;
+    color: rgba(95, 47, 12, 1);
+    margin-top: 2rem;
+    font-size: 64px;
+}
+
+.featureCard{
+    display: flex;
+    padding: 1rem 4rem 2rem 4rem;
+    justify-content: space-around;
+    /* margin: auto; */
+    /* width: 1240px; */
+}
+.feature{
+    border: 1px solid  rgba(95, 47, 12, 1);
+    border-radius: 10px;
+
+}
+.feature .cards-img{
+    width: 18rem;
+    height: 15rem;
+    /* margin-bottom: 1rem; */
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px  10px 0 0;
+    margin-bottom: 1rem;
+}
+.feature .cardsTexts{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.feature .prices{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feature .newp{
+    color: rgba(245, 130, 72, 1);
+}
+.feature .prevp{
+    color: rgba(179, 179, 179, 1);
+}
+
+
+
+.testimonialContain{
+    background: rgba(250, 243, 235, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 464px;
+    height: 928px;
+    margin: 1rem;
+    max-width: 1440px;
+    padding: 4rem 1rem 4rem 1rem;
+    object-fit: contain;
+
+}
+
+.testimonialHeading{
+    /* align-self: flex-start; */
+    text-align: center;
+    margin-top: 0;
+    color: rgba(95, 47, 12, 1);
+    font-weight: 700;
+
+}
+
+.testimonialCard{
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem 4rem 4rem;
+    justify-content: space-around;
+}
+
+
+
+.testimonial{
+    background: rgba(245, 130, 72, 1);
+    width: min-content;
+    margin-top: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.testimonial:hover{
+    transform: scale(1.2);
+}
+
+.testimonial .cards-img{
+    width: 13rem;
+    height: 10rem;
+}
+
+.testimonial .testiContent{
+    font-size: 11px;
+}
+
+.testimonial p{
+    color: #fff;
+}
+
+.letWork{
+    
+    text-align: center;
+    background: rgba(22, 90, 74, 1);
+    padding: 2rem;
+    margin-top: 3rem;
+
+}
+.letWork h3{
+    color: #fff;
+    margin-right: 4rem;
+}
+
+.letWork button{
+    color: rgba(22, 90, 74, 1);
+    height: 56px;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+.letWork button:hover{
+    color: #fff;
+    background: rgb(165, 202, 165);
+}
+
+.letWork div{
+    display: inline-flex;
+    
+}
+
+.letWork h2{
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgb(165, 202, 165);
+}
+
+@media screen and (max-width: 1044px){
+    .featureCard{
+        padding: 1rem 2rem 2rem 2rem;
+        width: 100%;
+    }
+
+    .feature .cards-img{
+        width: 13rem;
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature .prices{
+      font-size: 12px;
+    }
+    
+    .testimonialContain{
+        border-radius: 300px;
+        /* margin: 1rem; */
+        padding: 2rem 1rem 4rem 1rem;
+    }
+
+
+    .testimonial .cards-img{
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .testimonial .testiContent{
+        font-size: 8px;
+    }
+
+    .testimonial{
+        padding: 8px;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 769px){
+
+    .featureHeading {
+        font-size: 28px;
+    }
+    .featureCard{
+        /* display: flex;
+        padding: 1rem 4rem 2rem 4rem; */
+        overflow: scroll;
+    }
+
+    .feature .cards-img{
+        width: 15rem;
+        height: 12rem;
+       
+    }
+
+    .testimonialContain{
+        margin: 0 auto;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        /* margin-bottom: 0; */
+        /* width: 100%; */
+        /* overflow: scroll; */
+    }
+        
+    .testimonialCard{
+        overflow: scroll;
+        width: 80%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+    
+    .testimonial .cards-img{
+        width: 13rem;
+        height: 10rem;
+    }
+
+    
+.testimonial{
+    margin-right: 2rem;
+    transform: scale(1.1);
+}
+
+.letWork {
+    margin-top: 0;
+}
+
+.letWork div{
+    display: block;
+    text-align: justify;
+}
+
+.letWork h2{
+    font-size: 2rem;
+    font-weight: 50;
+    margin-top: 2rem;
+  
+}
+
+}

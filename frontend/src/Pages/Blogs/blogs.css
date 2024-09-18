@@ -1,0 +1,155 @@
+h1{
+    text-align: center;
+}
+
+.MobileSearch{
+    display: none;
+}
+
+
+.blogCard .mainCardDisplay{
+    display: none;
+}
+
+
+
+.blogMainContain{
+    display: flex;
+    padding: 2rem;
+}
+/* .blogCardContainer{
+    overflow: scroll;
+} */
+
+.blogLeftDiv{
+    padding: 2rem;
+}
+.blogLeftDiv h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+.blogLeftDiv input{
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.blogDownDiv{
+    display: none;
+}
+
+.blogLeftDiv  button{
+    background: transparent;
+    border-radius: 6px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.blogCardContain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    width: 70hw;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0; height: 0;
+}
+
+.blogCard{
+    margin: 1rem 3rem;
+    border: 1px solid rgb(221, 214, 214);
+    border-radius: 10px 10px 0 0 ;
+}
+
+
+
+.blogCard img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.blogCard .cardsTexts{
+ 
+    text-align: center;
+}
+
+.blogCard .dates{
+    color: rgba(245, 130, 72, 1);
+}
+.blogCard p{
+    font-size: 12px;
+}
+.blogCard h5{
+    font-size: 16px;
+}
+.blogCard .blogCardDisplay{
+    width: 15rem;
+    padding: 1rem;
+}
+
+
+@media screen and (max-width: 769px){
+    .MobileSearch{
+        display: block;
+    }
+    .MobileSearch input{
+        border-radius: 10px;
+        padding: 5px;
+        width: 18rem;
+        margin-top: 1rem;
+    }
+    .blogLeftDiv{
+        display: none;
+    }
+
+    /* ::-webkit-scrollbar {
+        width: 0; height: 0;
+    }
+     */
+
+  
+    .blogCardContain{
+        /* display: flex;
+        flex-wrap: wrap;
+        overflow: scroll; */
+        width: 85vw;
+        /* justify-content: space-around;
+        height: 100vh; */
+    }
+
+    .blogCard img{
+        /* justify-content: center;
+        align-items: center; */
+        width: 18rem;
+        height: 14rem;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .blogCard .blogCardDisplay{
+        width: 18rem;
+    }
+
+    .blogDownDiv{
+        display: block;
+        padding: 2rem;
+    }
+
+    .blogDownDiv button{
+        background: transparent;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin: 5px;
+    }
+
+    .blogDownDiv h2{
+        border-bottom: 0.2px solid black;
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,68 @@
+.contactContain h2{
+   text-align: center;
+   margin-bottom: 3rem ;
+}
+
+
+.contactContain {
+       padding: 2rem;
+ }
+
+ .contactText{
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+ }
+
+.contactInput label{
+    display: block;
+    text-align: start;
+    max-width: 60rem;
+}
+
+.contactInput input{
+    width: 13rem;
+    padding: 5px;
+}
+.contactInput textarea{
+    width: 100%;
+    max-width: 60rem;
+    padding: 5px;
+}
+.contactText{
+    display: flex;
+}
+
+.contactContain button{
+    margin: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background: rgba(31, 138, 112, 1);
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.contactContain button:hover{
+    background-color: rgb(21, 207, 160);
+}
+
+
+@media screen and (max-width: 769px){
+    .contactText{
+        display: block;
+        /* justify-content: space-between; */
+        margin-bottom: 1rem;
+        
+     }
+     .contactInput label{
+        margin-bottom: 2px;
+    }
+    .contactInput input{
+        width: 100%;
+        padding: 7px;
+        margin-bottom: 1rem;
+    }
+
+}

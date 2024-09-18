@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  .submit-review {
+    padding: 10px;
+    background-color: rgba(31, 138, 112, 1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .close-modal {
+    padding: 10px;
+    background-color: #999;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+  }  

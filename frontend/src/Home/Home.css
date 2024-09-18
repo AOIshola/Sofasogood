@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobileCarousel{
+    display: none;
+}
+
+.carousel{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.cardContain{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.97);
+    ;
+    /* width: 80vw; */
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.cardContainText{
+    padding: 10px;
+}
+
+.cardContainText p {
+    font-size: 25px;
+    font-weight: 200  
+}
+
+.cardContainText p span {
+    font-weight: 500;
+}
+
+.cardContainButton{
+    margin: 1rem;
+}
+.cardContainButton .get{
+    margin: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background: rgba(31, 138, 112, 1);
+    color: #fff;
+}
+.cardContainButton .shop{
+    margin: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;    
+}
+
+.cardContainButton button:hover{
+    background-color: rgb(21, 207, 160);
+}
+
+/* .rightArro{
+    position: absolute;
+    text-align: center;
+    transform: translate(0, -50%);
+    justify-content: center;
+    font-size: 100px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+} */
+
+
+@media screen and (max-width: 1044px){
+
+    .cardContain{
+        top: 85%;
+    }
+    .cardContainText{
+        padding: 15px;
+    }
+    
+    .cardContainText p {
+        font-size: 20px;
+        font-weight: 200  
+    }
+    .cardContainButton .get{
+        margin: 5px;
+        width: 8rem;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    .cardContainButton .shop{
+        margin: 5px;
+        width: 8rem;
+        border-radius: 5px;
+        padding: 10px;
+       
+    }
+}
+
+@media screen and (max-width: 769px){
+
+    .carousel{display: none;}
+    .mobileCarousel{
+        display: block;
+        width: 100vw;
+        /* height: ; */
+        margin: 0 auto;
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+    .mobileCarousel .cardContainText p {
+        font-size: 35px;
+        font-weight: 350;
+        margin-bottom: -1rem;
+    }
+
+    .mobileCarousel .mobileSlide{
+        width: 100%;
+        height: 40vh;
+    }
+
+    
+
+}

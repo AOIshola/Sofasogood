@@ -1,0 +1,5 @@
+node_modules
+.env
+.wslrun
+package-lock.json
+populate*
