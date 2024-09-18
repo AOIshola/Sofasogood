@@ -27,7 +27,6 @@ function Testimonial() {
 
     return (
         <div className="testimonial-canvas">
-            {/* <h2>Our Testimonial</h2> */}
             <div
                 style={{ position: "absolute", top: "50%", left: "100px" }}
             >

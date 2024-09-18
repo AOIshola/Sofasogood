@@ -1,4 +1,3 @@
-// AuthContext.js
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +17,6 @@ export const AuthProvider = ({ children }) => {
             const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
             setUser(response.data.user);
             localStorage.setItem('token', response.data.token);
-            // console.log(response.data.token);
             setLoading(false);
             navigate('/');
         } catch (err) {

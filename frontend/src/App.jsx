@@ -39,7 +39,6 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
-                    {/* <Route path="/products" exact component={Products} /> */}
                     <Route path="/product/:id" element={<SingleProduct />} />
                     <Route element={<PrivateRoutes />}>
                       <Route path="/cart" element={<CartPage />} />

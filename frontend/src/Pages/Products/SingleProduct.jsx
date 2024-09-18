@@ -11,9 +11,9 @@ import { useReviews } from '../../contexts/ReviewContext';
 import StarRating from '../../components/StarRating';
 
 const SingleProduct = () => {
-    const { id } = useParams(); // id refers to product ID
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
-    const [productReviews, setProductReviews] = useState([]); // To store product-specific reviews
+    const [productReviews, setProductReviews] = useState([]);
     const [baseUrl, setBaseUrl] = useState('http://localhost:5000/api');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -21,7 +21,7 @@ const SingleProduct = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [showReview, setShowReview] = useState(false);
 
-    const { getSingleProductReviews } = useReviews(); // Import the function from context
+    const { getSingleProductReviews } = useReviews();
 
     const toggleShowReviews = () => {
         setShowReview(!showReview);
@@ -41,7 +41,7 @@ const SingleProduct = () => {
 
         const fetchProductReviews = async () => {
             try {
-                const reviews = await getSingleProductReviews(id); // Fetch product-specific reviews
+                const reviews = await getSingleProductReviews(id);
                 setProductReviews(reviews);
             } catch (err) {
                 console.error('Failed to fetch reviews:', err);
@@ -49,7 +49,7 @@ const SingleProduct = () => {
         };
 
         fetchProduct();
-        fetchProductReviews(); // Fetch the reviews when the product loads
+        fetchProductReviews();
     }, [id, baseUrl, getSingleProductReviews]);
 
     const handleAddToCart = async () => {
@@ -83,7 +83,7 @@ const SingleProduct = () => {
                 }
             });
             alert('Review submitted successfully!');
-            setIsModalOpen(false); // Close modal after submitting
+            setIsModalOpen(false);
         } catch (error) {
             console.error(error);
             alert('Failed to submit review');
@@ -114,7 +114,9 @@ const SingleProduct = () => {
                     {productReviews.map((review) => (
                         <div className='product-review' key={review._id}>
                             <p>Customer name: {review.user.name}</p>
-                            <div style={{ display: 'flex', margin: 'auto' }}>Rating: <StarRating rating={review.rating} /></div>
+                            <div style={{ display: 'flex', margin: 'auto' }}>
+                                Rating: <StarRating rating={review.rating} />
+                            </div>
                             <p>Review: {review.comment}</p>
                         </div>
                     ))}

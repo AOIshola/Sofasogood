@@ -1,26 +1,5 @@
 import { range } from "../utils/range";
 import './testimonial.css';
-// const StarRating = ( {rating} ) => {
-//     const TOTAL = 5
-//     return (
-//         <div style={{width: "90px", height: "20px", border: "1px solid red"}}>
-//             {range(TOTAL).map((star) => ( star < rating ?
-//                 <img
-//                 key={crypto.randomUUID()}
-//                 src="https://sandpack-bundler.vercel.app/img/gold-star.svg"
-//                 alt="Star"
-//                 className="star"/>
-//                 :
-//                 <img
-//                 key={crypto.randomUUID()}
-//                 src="/star.png"
-//                 alt="Star"
-//                 className="star"
-//                 />
-//             ))}
-//         </div>
-//     )
-// }
 
 const StarRating = ({ rating }) => {
     const TOTAL = 5;

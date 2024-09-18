@@ -24,7 +24,7 @@ function Blogs() {
         styles="blogCard"
         key={index}
         date={date}
-        img={imageUrl}  // Corrected to match imageUrl from your schema
+        img={imageUrl}
         title={title}
         report={repost}
         comment={comment}
@@ -32,10 +32,6 @@ function Blogs() {
       />
     )
   );
-
-  useEffect(() => {
-    console.log(blogs);
-  }, [])
 
   return (
     <>

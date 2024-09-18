@@ -1,4 +1,3 @@
-// Login.js
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Navs from '../../Navigation/Nav';
@@ -29,7 +28,6 @@ function Login() {
             <Navs />
             <div className="auth-container">
                 <form className="auth-form" onSubmit={handleSubmit}>
-                    {/* {error && <p>{error}</p>} */}
                     <h2>Login</h2>
                     {error && <p className="error">{error}</p>}
                     <input
