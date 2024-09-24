@@ -67,20 +67,21 @@ Ensure you have the following installed:
     cd backend
     npm start
 
-    The backend should now be running on http://localhost:5000.
-
+    # The backend should now be running on http://localhost:5000.
 
     cd frontend
     npm run dev
 
-    The frontend should now be running on http://localhost:5173.
+    # The frontend should now be running on http://localhost:5173.
 
 ## Environment Variables
 To run the project, create a .env file in the backend directory with the following values:
 
 # Backend environment variables
-MONGO_URL=<your-mongo-db-uri>
-SECRET_KEY=<your-jwt-secret-key>
+MONGO_URI=<your-mongo-db-uri>
+SECRET_KEY=<your-jwt-secret>
+
+# Email for password reset (Optional)
 EMAIL_USER=<your-email-user>
 EMAIL_PASS=<your-email-pass>
 
