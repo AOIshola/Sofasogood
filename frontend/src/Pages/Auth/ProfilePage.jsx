@@ -12,7 +12,7 @@ const ProfilePage = () => {
         if (!currentUser && !loading) {
             navigate('/login');
         }
-    }, [currentUser, loading, navigate]);
+    }, [currentUser]);
 
     if (!currentUser) {
         return <div>Loading...</div>;

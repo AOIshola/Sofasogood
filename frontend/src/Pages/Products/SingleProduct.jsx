@@ -112,13 +112,15 @@ const SingleProduct = () => {
                 <div className='reviews'>
                     <h3>Reviews</h3>
                     {productReviews.map((review) => (
-                        <div className='product-review' key={review._id}>
+                        Object.keys(review).length < 1 ? <div className='product-review' key={review._id}>
                             <p>Customer name: {review.user.name}</p>
                             <div style={{ display: 'flex', margin: 'auto' }}>
                                 Rating: <StarRating rating={review.rating} />
                             </div>
                             <p>Review: {review.comment}</p>
                         </div>
+                            :
+                            <>No Reviews</>
                     ))}
                 </div>
             )}
